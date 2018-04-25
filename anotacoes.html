@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h3>Instalação</h3>
+    <p>instalar o create-react-app: bíblioteca que a galera do face liberou para facilitar a instalação e utilização do react
+    </p>
+
+    <code>npm install -g create-react-app</code>
+
+    <p>
+        -- Para criar a aplicação rode esse comando:
+    </p>
+    <code>
+create-react-app "nome da aplicação"
+</code>
+
+    <h3>Comandos utilitários</h3>
+    <p>
+        <code>npm start</code> -- Inicia o projeto</p>
+
+    <p>
+        <code>npm run build</code> -- Disponibiliza o projeto para produção</p>
+
+    <p>
+        <code>npm run teste</code> -- Executa os testes</p>
+
+    <p>
+        <code>npm run eject </code> -- Remove todo o projeto e deixa limpo para ser usado do 0, não pode reverter.
+    </p>
+
+
+    <h3>Cliclo de vida</h3>
+
+    <p>
+        <code> ComponetWillMount (){}</code> Função que é chamada antes da função Render ser chamada. </p>
+
+    <code> ComponentdidMount(){}</code> Função que é chamada após a função Render ser chamada. </p>
+
+    <p>
+        É uma boa prática trazer os dados usando essas função e não no constructor do componente, existem outros métodos do ciclo
+        de vida do react mas esses são os principais. a variável state herdada da classe pai Componentes vai ser a mais utilizada
+        no React, e atualizar o estado dela para os dados serem recarregados e etc vai ser algo comum, fazemos isso utilizando
+        o método: setState fazendo assim o virtual dom ser recarregado com os novos dados de determinadas requisições.
+    </p>
+
+    <h3>Criação dos componentes</h3>
+    <p>Ao criar um componente em react, para ter acesso aos atributos passados pela classe "pai" é preciso usar o props:</p>
+    <code> {this.props.nome} </code>
+    <p>
+        todos os atributos são convertidos em um json, que permite o acesso em toda a classe.
+    </p>
+
+    <h3>Anotações</h3>
+    A página index.html é necessária pois, basicamente todo o código fonte que é gerado no build do projeto que se torna o bundle.js
+    e é importado dentro do index.html, isso é feito pelo webpack.
+
+    <p> Babel - responsável por transcrever o código javascript pra ser interpretado pelo node Js.</p>
+
+    <p>Webpack - fica responsável por converter nosso código que é do servidor e conseguir redenrizar ele no navegador.</p>
+
+    <p>High Order Components e muito praticada em projetos que utilizam o React. A ideia é que o estado fique sempre nos seus
+        High Order Components e que os outros componentes fiquem apenas com a responsabilidade de montar a visualização em
+        si.</p>
+
+
+
+</body>
+
+</html>
